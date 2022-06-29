@@ -1,6 +1,6 @@
 ######### SERAJ Mostafa @UMBC #########
-###### Using opencv thresholding ######
-## apply to whole dir with same name ##
+######## Using matplotlib pyplot ######
+###### compare plots side by side #####
 
 dir1 = ('/your/path/to/dir1/')
 dir2 = ('/your/path/to/dir2/')
