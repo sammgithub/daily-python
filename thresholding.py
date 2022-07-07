@@ -1,6 +1,7 @@
 ######### SERAJ Mostafa @UMBC #########
 ###### Using opencv thresholding ######
 ## apply to whole dir with same name ##
+import os, cv2
 
 target_value = 118
 max_value = 255
