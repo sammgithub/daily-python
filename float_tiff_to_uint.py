@@ -9,7 +9,7 @@ from skimage.transform import rescale, resize, downscale_local_mean
 from osgeo import gdal
 import os
 
-output_dir = '/Users/ssr/Dropbox/aws_UInt8_noeddy/'
+output_dir = '/output/dir/path/'
 
 def convert(src, dest): ## src dest are the source and destnation
     
@@ -51,7 +51,7 @@ def convert(src, dest): ## src dest are the source and destnation
     # axes.imshow(read_new, cmap='gray')
 
 def main():
-    files = list(os.scandir('/Users/ssr/Dropbox/tiff_with_noeddies/'))
+    files = list(os.scandir('/src/dir/path/'))
     for file in files:
         convert(file.path, f'{output_dir}{file.name}') ## '''file.path and file.name are file properties coming from os.scandir. test is python as>> os.scandir('.');file = next(os.scandir('.'));dir(file)<< it will show available options. AND <f'{output_dir}{file.name}> gives you the files in the same names in a new dest'''
 
